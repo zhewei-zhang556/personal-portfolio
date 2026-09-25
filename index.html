@@ -8,6 +8,14 @@
   <title>Zhewei Zhang | Portfolio</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -19,24 +27,28 @@
     header {
       background-color: #1f2937;
       color: white;
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 42px;
+      font-size: 44px;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 18px;
+      margin: 10px 0 0;
+      font-size: 19px;
+      color: #e5e7eb;
     }
 
     nav {
       background-color: #111827;
       padding: 15px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
     nav a {
@@ -53,14 +65,21 @@
     section {
       max-width: 900px;
       margin: 40px auto;
-      padding: 30px;
+      padding: 35px;
       background-color: white;
       border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
+      margin-top: 0;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 10px;
+      color: #1f2937;
+    }
+
+    h3 {
+      color: #1f2937;
     }
 
     .skills span {
@@ -72,11 +91,53 @@
     }
 
     .project {
-      margin-bottom: 30px;
+      padding: 25px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .project:last-child {
+      border-bottom: none;
     }
 
     .project h3 {
+      margin-top: 0;
       margin-bottom: 5px;
+      font-size: 22px;
+    }
+
+    .project-type {
+      color: #6b7280;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    .project-skills {
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #1f2937;
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #374151;
+    }
+
+    .contact-link {
+      color: #1f2937;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -84,8 +145,23 @@
       padding: 30px;
       color: #666;
     }
-  </style>
 
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      section {
+        margin: 20px 15px;
+        padding: 25px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -114,8 +190,11 @@
 
     <p>
       Through coursework and academic projects, I have developed experience
-      using financial and analytical tools to evaluate business problems
-      and communicate insights.
+      in business analysis, research, teamwork, and professional communication.
+      My projects have allowed me to apply classroom concepts to business
+      decision making while also strengthening my ability to research complex
+      topics, evaluate different perspectives, and communicate conclusions
+      clearly.
     </p>
   </section>
 
@@ -126,7 +205,8 @@
 
     <p>
       Rutgers Business School<br>
-      Bachelor of Science in Finance
+      Bachelor of Science in Finance<br>
+      Expected Graduation: Spring 2028
     </p>
   </section>
 
@@ -137,9 +217,13 @@
       <span>Microsoft Excel</span>
       <span>SQL</span>
       <span>Tableau</span>
-      <span>Financial Analysis</span>
-      <span>Market Research</span>
       <span>Microsoft PowerPoint</span>
+      <span>Business Analysis</span>
+      <span>Market Research</span>
+      <span>Academic Research</span>
+      <span>Critical Thinking</span>
+      <span>Teamwork</span>
+      <span>Written Communication</span>
     </div>
   </section>
 
@@ -147,29 +231,73 @@
     <h2>Projects</h2>
 
     <div class="project">
-      <h3>Business Data Analysis Project</h3>
-      <p>
-        Used SQL, Excel, and Tableau to analyze business data,
-        organize datasets, and create visualizations to communicate
-        business insights.
+      <h3>RU Ready – Business Management Project</h3>
+
+      <p class="project-type">
+        Team Project | Introduction to Management
       </p>
+
+      <p>
+        Developed a student-focused moving service concept designed to provide
+        affordable and reliable moving assistance for Rutgers students. As a
+        team, we developed the business concept, customer value proposition,
+        financial and strategic objectives, and plans for future growth.
+      </p>
+
+      <p>
+        The project also examined employee recruitment and motivation,
+        operational processes, service effectiveness and efficiency, and
+        process improvement. We used a SIPOC framework to evaluate the moving
+        service process and proposed improvements to training, scheduling,
+        equipment readiness, and customer service.
+      </p>
+
+      <p class="project-skills">
+        <strong>Skills:</strong>
+        Business Strategy · Operations Management · Decision Making ·
+        Process Improvement · Teamwork · Presentation
+      </p>
+
+      <a class="button"
+         href="Intro%20to%20Management%20(1).pdf"
+         target="_blank">
+        View Project
+      </a>
     </div>
 
     <div class="project">
-      <h3>New Jersey Minimum Wage Policy Analysis</h3>
-      <p>
-        Analyzed the potential economic and business impacts of
-        New Jersey's minimum wage policy and evaluated different
-        policy alternatives.
-      </p>
-    </div>
+      <h3>Shared Moments, Different Meanings</h3>
 
-    <div class="project">
-      <h3>Financial and Business Analysis Project</h3>
-      <p>
-        Applied financial and business concepts to evaluate company
-        performance and support data-driven decision making.
+      <p class="project-type">
+        Individual Research Project
       </p>
+
+      <p>
+        Conducted an independent research project examining how large-scale
+        media events, media framing, and audience interpretation influence
+        the construction of collective identity.
+      </p>
+
+      <p>
+        The paper synthesizes academic research on media events, framing,
+        and audience agency to examine why people can share the same media
+        experience while developing different interpretations. The project
+        strengthened my ability to evaluate academic sources, compare
+        theoretical perspectives, develop an argument, and communicate
+        research findings in a structured paper.
+      </p>
+
+      <p class="project-skills">
+        <strong>Skills:</strong>
+        Research · Critical Thinking · Source Analysis ·
+        Academic Writing · Communication
+      </p>
+
+      <a class="button"
+         href="Media-Events-Research-Project.pdf"
+         target="_blank">
+        View Research Paper
+      </a>
     </div>
 
   </section>
@@ -178,7 +306,12 @@
     <h2>Contact</h2>
 
     <p>
-      GitHub: zhewei-zhang556
+      GitHub:
+      <a class="contact-link"
+         href="https://github.com/zhewei-zhang556"
+         target="_blank">
+        zhewei-zhang556
+      </a>
     </p>
   </section>
 
