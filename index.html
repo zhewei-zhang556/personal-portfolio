@@ -1,49 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Zhewei Zhang | Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    nav {
+      background-color: #111827;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background-color: #e5e7eb;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 6px;
+    }
+
+    .project {
+      margin-bottom: 30px;
+    }
+
+    .project h3 {
+      margin-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <h1>Zhewei Zhang</h1>
+  <header>
+    <h1>Zhewei Zhang</h1>
+    <p>Finance Student | Rutgers Business School</p>
+  </header>
 
-  <p>
-    Finance student at Rutgers Business School with an interest in financial analysis,
-    business strategy, and data-driven decision making.
-  </p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Microsoft Excel</li>
-    <li>SQL</li>
-    <li>Tableau</li>
-    <li>Financial Analysis</li>
-    <li>Market Research</li>
-    <li>Microsoft PowerPoint</li>
-  </ul>
+  <section id="about">
+    <h2>About Me</h2>
 
-  <h2>Projects</h2>
+    <p>
+      I am a Finance student at Rutgers Business School with interests in
+      financial analysis, business strategy, market research, and
+      data-driven decision making.
+    </p>
 
-  <h3>Business Data Analysis Project</h3>
-  <p>
-    Used SQL, Excel, and Tableau to analyze business data, organize datasets,
-    and create visualizations to communicate business insights.
-  </p>
+    <p>
+      Through coursework and academic projects, I have developed experience
+      using financial and analytical tools to evaluate business problems
+      and communicate insights.
+    </p>
+  </section>
 
-  <h3>New Jersey Minimum Wage Policy Analysis</h3>
-  <p>
-    Analyzed the potential economic and business impacts of New Jersey's
-    minimum wage policy and evaluated different policy alternatives.
-  </p>
+  <section id="education">
+    <h2>Education</h2>
 
-  <h3>Financial and Business Analysis Project</h3>
-  <p>
-    Applied financial and business concepts to evaluate company performance
-    and support data-driven decision making.
-  </p>
+    <h3>Rutgers University – New Brunswick</h3>
+
+    <p>
+      Rutgers Business School<br>
+      Bachelor of Science in Finance
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <span>Microsoft Excel</span>
+      <span>SQL</span>
+      <span>Tableau</span>
+      <span>Financial Analysis</span>
+      <span>Market Research</span>
+      <span>Microsoft PowerPoint</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Business Data Analysis Project</h3>
+      <p>
+        Used SQL, Excel, and Tableau to analyze business data,
+        organize datasets, and create visualizations to communicate
+        business insights.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>New Jersey Minimum Wage Policy Analysis</h3>
+      <p>
+        Analyzed the potential economic and business impacts of
+        New Jersey's minimum wage policy and evaluated different
+        policy alternatives.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Financial and Business Analysis Project</h3>
+      <p>
+        Applied financial and business concepts to evaluate company
+        performance and support data-driven decision making.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+      GitHub: zhewei-zhang556
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Zhewei Zhang</p>
+  </footer>
 
 </body>
+
 </html>
